@@ -8,7 +8,7 @@ Quick Test file: runpa0.cxx
 
  Compile runpa0.cxx with command : g++ -o runpa0 runpa0.cxx
 
- And run :./runpa0
+ And run : ./runpa0
 
 2. PA2: PA0: source code file --> pa1.cxx
  
