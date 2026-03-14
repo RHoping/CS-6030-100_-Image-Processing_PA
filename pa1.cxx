@@ -203,7 +203,7 @@ public:
 
             HitRecord rec;
             if (world.hit(r, Interval(0.001, std::numeric_limits<double>::infinity()), rec)) {
-                // Diffuse approximation using normal — no material needed
+                // Diffuse approximation using normal
                 Vec3 direction = rec.normal + Vec3::random_unit_vector(); // Random scatter off normal
                 return ray_color(Ray(rec.p, direction), world, depth - 1) * 0.5; // Recurse, attenuate by 0.5
             }
@@ -231,7 +231,7 @@ public:
                 }
                 pixel_color = pixel_color / samples_per_pixel; // Average samples
 
-                // Write pixel directly — no need to modify pa0.cxx
+                // Write pixel directly 
                 auto clamp = [](double v){ return std::max(0.0, std::min(1.0, v)); };
                 out << int(255.999*clamp(pixel_color.r)) << " "
                     << int(255.999*clamp(pixel_color.g)) << " "
