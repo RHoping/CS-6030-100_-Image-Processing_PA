@@ -13,7 +13,9 @@ Quick Test file: runpa0.cxx
 2. PA2: PA0: source code file --> pa1.cxx
  
  Quick Test file: runpa1.cxx
+ 
  To run this file install magick for output sample image : sudo dnf install ImageMagick(Fedora), sudo apt install imagemagick(Unbuntu)
+ 
  Compile and run using command mentioned in pa0 section 
 
 Note: Github : 
