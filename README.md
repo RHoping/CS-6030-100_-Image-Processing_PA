@@ -11,6 +11,8 @@ Quick Test file: runpa0.cxx
  And run : ./runpa0
 
 2. PA2: PA0: source code file --> pa1.cxx
+
+   Note: pa1 require's pa0 to run
  
  Quick Test file: runpa1.cxx
  
